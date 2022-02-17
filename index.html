@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="cardo">
+            <a href="index.html" class="reload" id="reload">
+                <i class='bx bx-refresh'></i>
+            </a>
+            <h1 class="title text-center mb-4">
+                BlackJack
+            </h1>
+            <h4 class="sub mb-3">
+                Wanna play a round?
+            </h4>
+            <div class="cards__wrapper d-flex mb-2 align-items-end">
+                <p class="me-2 name">
+                    Cards:
+                </p>
+                
+                <div id="firstCard-img" class="card__img d-flex flex-column justify-content-between">
+                    <div class="card__img-wrapper d-flex justify-content-between">
+                        <p class="red">
+                            ♥
+                        </p>
+                        <p>
+                            ♣
+                        </p>  
+                    </div>
+                    <p id="cards" class="text-center">
+
+                    </p>
+                    <div class="card__img-wrapper d-flex justify-content-between">
+                        <p>
+                            ♠
+                        </p>
+                        <p class="red">
+                            ♦
+                        </p>
+                    </div> 
+                </div>
+
+                <div id="secondCard-img" class="card__img d-flex flex-column justify-content-between">
+                    <div class="card__img-wrapper d-flex justify-content-between">
+                        <p class="red">
+                            ♥
+                        </p>
+                        <p>
+                            ♣
+                        </p>  
+                    </div>
+                    <p id="cards2" class='text-center'>
+
+                    </p>
+                    <div class="card__img-wrapper d-flex justify-content-between">
+                        <p>
+                            ♠
+                        </p>
+                        <p class="red">
+                            ♦
+                        </p>
+                    </div> 
+                </div>
+
+                <div id="thirdCard-img" class="card__img d-flex flex-column justify-content-between">
+                    <div class="card__img-wrapper d-flex justify-content-between">
+                        <p class="red">
+                            ♥
+                        </p>
+                        <p>
+                            ♣
+                        </p>  
+                    </div>
+                    <p id="cards3" class='text-center'>
+
+                    </p>
+                    <div class="card__img-wrapper d-flex justify-content-between">
+                        <p>
+                            ♠
+                        </p>
+                        <p class="red">
+                            ♦
+                        </p>
+                    </div> 
+                </div>
+
+            </div>
+            <div class="sum__wrapper d-flex mb-4 align-items-end">
+                <p class="me-2 name">
+                    Sum:
+                </p>
+                <p class="txt" id="sumTxt">
+                    
+                </p>
+            </div>
+            <button onclick="startGame()" class="button mb-2" id="button">
+                Start
+            </button>
+            <button onclick="newCard()" class="new__card-button" id="newCard">
+                New Card
+            </button>
+            <p id="massage" class="massage text-center">
+                result
+            </p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
